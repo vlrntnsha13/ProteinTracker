@@ -23,6 +23,9 @@ import android.content.Intent;
         Button helpBtn = (Button)findViewById(R.id.helpButton);
         helpBtn.setOnClickListener(helpButtonListener);
 
+        Button btn2 = (Button)findViewById(R.id.button2);
+        btn2.setOnClickListener(button2GetListener);
+
         Button myBtn = (Button)findViewById(R.id.button1);
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +56,16 @@ import android.content.Intent;
                 b.putString("helpString",myEditText.getText().toString());
                 intent.putExtras(b);
 
+                startActivity(intent);
+            }
+    };
+
+
+
+    private View.OnClickListener button2GetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
                 startActivity(intent);
             }
     };
