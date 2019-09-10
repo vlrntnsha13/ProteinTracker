@@ -26,6 +26,15 @@ import android.content.Intent;
         Button btn2 = (Button)findViewById(R.id.button2);
         btn2.setOnClickListener(button2GetListener);
 
+        Button btn3 = (Button)findViewById(R.id.relativebtn);
+        btn3.setOnClickListener(relativebtnGetListener);
+
+        Button btn4 = (Button)findViewById(R.id.tablebtn);
+        btn4.setOnClickListener(tablebtnGetListener);
+
+        Button btn5 = (Button)findViewById(R.id.ptbtn);
+        btn5.setOnClickListener(ptbtnGetListener);
+
         Button myBtn = (Button)findViewById(R.id.button1);
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +75,30 @@ import android.content.Intent;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                startActivity(intent);
+            }
+    };
+
+    private View.OnClickListener relativebtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main3Activity.class);
+                startActivity(intent);
+            }
+    };
+
+    private View.OnClickListener tablebtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main4Activity.class);
+                startActivity(intent);
+            }
+    };
+
+    private View.OnClickListener ptbtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ProteinTrackerApp.class);
                 startActivity(intent);
             }
     };
