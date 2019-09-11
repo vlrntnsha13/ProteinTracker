@@ -35,6 +35,9 @@ import android.content.Intent;
         Button btn5 = (Button)findViewById(R.id.ptbtn);
         btn5.setOnClickListener(ptbtnGetListener);
 
+        Button fragbtn = (Button)findViewById(R.id.fragbtn);
+        fragbtn.setOnClickListener(fragbtnGetListener);
+
         Button myBtn = (Button)findViewById(R.id.button1);
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +102,14 @@ import android.content.Intent;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,ProteinTrackerApp.class);
+                startActivity(intent);
+            }
+    };
+
+    private View.OnClickListener fragbtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Main5FragmentActivity.class);
                 startActivity(intent);
             }
     };
