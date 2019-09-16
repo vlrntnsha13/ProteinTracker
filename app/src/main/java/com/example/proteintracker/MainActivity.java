@@ -38,6 +38,9 @@ import android.content.Intent;
         Button fragbtn = (Button)findViewById(R.id.fragbtn);
         fragbtn.setOnClickListener(fragbtnGetListener);
 
+        Button mhsbtn = (Button)findViewById(R.id.mhsbtn);
+        mhsbtn.setOnClickListener(mhsbtnGetListener);
+
         Button myBtn = (Button)findViewById(R.id.button1);
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,4 +116,12 @@ import android.content.Intent;
                 startActivity(intent);
             }
     };
+
+    private View.OnClickListener mhsbtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MahasiswaActivity.class);
+                startActivity(intent);
+            }
+        };
 }
