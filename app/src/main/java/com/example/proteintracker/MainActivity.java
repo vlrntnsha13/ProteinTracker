@@ -41,6 +41,9 @@ import android.content.Intent;
         Button mhsbtn = (Button)findViewById(R.id.mhsbtn);
         mhsbtn.setOnClickListener(mhsbtnGetListener);
 
+        Button kelolamhsbtn = (Button)findViewById(R.id.kelolamhsbtn);
+        kelolamhsbtn.setOnClickListener(kelolamhsbtnGetListener);
+
         Button listbtn = (Button)findViewById(R.id.listBtn);
         listbtn.setOnClickListener(listbtnGetListener);
 
@@ -127,6 +130,14 @@ import android.content.Intent;
                 startActivity(intent);
             }
         };
+
+    private View.OnClickListener kelolamhsbtnGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,KelolamhsActivity.class);
+                startActivity(intent);
+            }
+    };
 
     private View.OnClickListener listbtnGetListener = new View.OnClickListener() {
             @Override
