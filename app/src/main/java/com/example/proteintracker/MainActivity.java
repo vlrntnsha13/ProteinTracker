@@ -47,6 +47,13 @@ import android.content.Intent;
         Button listbtn = (Button)findViewById(R.id.listBtn);
         listbtn.setOnClickListener(listbtnGetListener);
 
+        Button recvinlab = (Button)findViewById(R.id.recvInlab);
+        recvinlab.setOnClickListener(recvinlabGetListener);
+
+        Button recvmhs = (Button)findViewById(R.id.recvMhs);
+        recvmhs.setOnClickListener(recvmhsGetListener);
+
+
         Button myBtn = (Button)findViewById(R.id.button1);
         myBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,6 +150,22 @@ import android.content.Intent;
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,ListActivity.class);
+                startActivity(intent);
+            }
+        };
+
+    private View.OnClickListener recvinlabGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        };
+
+    private View.OnClickListener recvmhsGetListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,RecyclerViewMhsActivity.class);
                 startActivity(intent);
             }
         };
