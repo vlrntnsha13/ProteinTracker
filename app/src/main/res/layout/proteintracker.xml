@@ -1,64 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="right"
             android:text="Protein Consume :"
-            android:textSize="16sp"
-            android:layout_margin="10dp"/>
+            android:textSize="16sp" />
+
         <EditText
             android:id="@+id/editText1"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:layout_margin="10dp">
-            <requestFocus android:layout_width="wrap_content"/>
+            android:ems="10">
+
+            <requestFocus android:layout_width="wrap_content" />
         </EditText>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="right">
+
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enter"/>
+            android:text="Enter" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Total for days :"
-            android:layout_weight="1"
-            android:textSize="16sp"
             android:layout_margin="10dp"
-            android:gravity="right"/>
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="Total for days :"
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="fill_parent"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
             android:text="100g"
-            android:textSize="16sp"
-            android:layout_margin="10dp"/>
+            android:textSize="16sp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@android:color/white">
+
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/TextView01"
             android:layout_width="fill_parent"
@@ -67,7 +87,8 @@
             android:layout_weight="1"
             android:gravity="right"
             android:text="Goal :"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/TextView02"
             android:layout_width="fill_parent"
@@ -75,31 +96,50 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="175g"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:background="@android:color/white"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/TextView04"
-            android:layout_width="fill_parent"
+            android:layout_width="43dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:gravity="right"
             android:text="Needed :"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/TextView03"
-            android:layout_width="fill_parent"
+            android:layout_width="54dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="75g"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
+
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="412dp"
+            android:layout_marginEnd="8dp"
+            android:text="reset"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </LinearLayout>

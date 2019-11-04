@@ -90,13 +90,13 @@ import android.content.Intent;
 
 
 
-    private View.OnClickListener button2GetListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Main2Activity.class);
-                startActivity(intent);
-            }
-    };
+        private View.OnClickListener button2GetListener = new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this,Main2Activity.class);
+                    startActivity(intent);
+                }
+        };
 
     private View.OnClickListener relativebtnGetListener = new View.OnClickListener() {
             @Override
